@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Lu Empire — Order. Power. Legacy.</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <meta name="description" content="The Lu Empire — Order. Power. Legacy. Uniting Finance, Technology, and Law into a New Order.">
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="#" aria-label="Lu Empire">
+        <div class="logo">
+          <i class="fa-solid fa-dragon" style="font-size:24px;color:var(--accent-1)"></i>
+        </div>
+        <div>
+          <h1>The Lu Empire</h1>
+          <p>Order. Power. Legacy.</p>
+        </div>
+      </a>
+
+      <nav class="socials">
+        <a href="#" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" title="Discord"><i class="fa-brands fa-discord"></i></a>
+        <a href="#" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="card hero-left reveal" style="--delay:0ms">
+        <div class="pill"><i class="fa-solid fa-crown" style="color:var(--accent-1)"></i> Sovereign Order</div>
+
+        <h2>
+          The Lu Empire
+          <span class="typed" id="typed"></span>
+        </h2>
+
+        <p class="subtitle">Established to integrate Finance, Technology, and Law—we do not conform to the world. We forge a New Order.</p>
+
+        <div class="cta-row">
+          <button class="btn-primary" onclick="ctaPrimary()">Join the Order <i class="fa-solid fa-arrow-right" style="margin-left:8px"></i></button>
+          <button class="btn-ghost" onclick="document.querySelector('#about').scrollIntoView({behavior:'smooth'})">
+            Learn More <i class="fa-solid fa-book-open" style="margin-left:8px"></i>
+          </button>
+        </div>
+
+        <div class="grid" style="margin-top:20px">
+          <div class="feature" data-tilt>
+            <div class="ico"><i class="fa-solid fa-sack-dollar"></i></div>
+            <div>
+              <h3>Financial Stability</h3>
+              <p>Robust frameworks ensuring sustainable wealth, transparent transactions, and protected assets.</p>
+            </div>
+          </div>
+
+          <div class="feature" data-tilt>
+            <div class="ico"><i class="fa-solid fa-microchip"></i></div>
+            <div>
+              <h3>Technological Sovereignty</h3>
+              <p>Advanced systems with privacy-centric design and AI-driven governance.</p>
+            </div>
+          </div>
+
+          <div class="feature" data-tilt>
+            <div class="ico"><i class="fa-solid fa-scale-balanced"></i></div>
+            <div>
+              <h3>Legal Authority</h3>
+              <p>Defined regulations, enforceable mandates, and DAO-supported justice for equitable power distribution.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="visual reveal card side" style="--delay:80ms">
+        <div class="float-ring"></div>
+        <div class="throne" id="throne">
+          <div class="crest"><i class="fa-solid fa-dragon"></i></div>
+          <h3 style="color:white;font-weight:800">Order. Power. Legacy.</h3>
+          <small class="muted">Comprehensive Governance via DAO: Justice, Balance, Eternity.</small>
+
+          <div class="float-dot" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="card left reveal" style="--delay:140ms">
+        <h2 style="margin-bottom:8px">About Us</h2>
+        <p style="color:var(--muted); margin-bottom:14px">
+          The Lu Empire transcends a mere title—it embodies Order. Established with the vision to integrate Finance, Technology, and Law,
+          the Empire carves a path where sustainability endures, privacy remains inviolable, and governance is unyielding.
+        </p>
+
+        <p style="font-weight:600;margin-bottom:8px">We reject the transient norms of the world. We establish a New Order.</p>
+
+        <ul style="list-style:none;margin-top:8px;display:grid;gap:10px">
+          <li><i class="fa-solid fa-check" style="color:var(--accent-2);margin-right:12px"></i> An order founded on decrees, not mere promises</li>
+          <li><i class="fa-solid fa-check" style="color:var(--accent-2);margin-right:12px"></i> Equilibrium of power through DAO governance</li>
+          <li><i class="fa-solid fa-check" style="color:var(--accent-2);margin-right:12px"></i> Enduring, fortified, and transparent infrastructures</li>
+        </ul>
+
+        <div style="margin-top:16px; display:flex;gap:10px;">
+          <button class="btn-ghost" onclick="ctaPrimary()">Request Charter <i class="fa-solid fa-file-contract" style="margin-left:8px"></i></button>
+          <button class="btn" onclick="document.querySelector('footer').scrollIntoView({behavior:'smooth'})"><i class="fa-solid fa-envelope" style="margin-right:8px"></i>Contact</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-left">
+        <strong style="color:var(--accent-2)">The Lu Empire</strong>
+        <div class="muted" style="margin-top:6px">Order. Power. Legacy. — © <span id="year"></span></div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Link to external JS -->
+  <script src="script.js"></script>
+</body>
+</html>
