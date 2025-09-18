@@ -7,15 +7,15 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
-// serve static files (css, js, images etc.)
+// serve static files (css, js, etc.) from app folder
 app.use("/app", express.static(path.join(__dirname, "app")));
 
-// main route to fetch real site
+// serve index.html
 app.get("/real-index", (req, res) => {
   res.sendFile(path.join(__dirname, "app/index.html"));
 });
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`🚀 Lu Empire backend running at http://localhost:${PORT}`);
+  console.log(`🚀 Lu Empire backend running on port ${PORT}`);
 });
